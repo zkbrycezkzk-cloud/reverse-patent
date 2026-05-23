@@ -1,0 +1,17 @@
+[
+  {
+    "id": "reverse-b-coupled-claim1",
+    "prompt": "使用 lib-patent-reverse-layout。给定圆柱锂离子电池实测交流内阻a、直流内阻b、10C温升系数c、极片面密度和导热系数，请构建耦合式权利要求1。",
+    "expected": "应采用产品对象+可测性能参数+可反向材料/结构参数+关系式格式，输出15条权利要求，权1含可反向参数范围、协调关系式和排除性限定。"
+  },
+  {
+    "id": "reverse-b-gel-electrolyte",
+    "prompt": "使用 lib-patent-reverse-layout。给定凝胶电解质电芯的凝胶厚度、质量分数、XPS元素比、DSC相变峰、DMA模量比、EIS电导率和循环保持率，请设计反向布局。",
+    "expected": "应读取凝胶/固态体系规则，使用XPS/DSC/DMA/EIS等检测口径，输出权要映射、单因素矩阵、实施例1配方和法证级反向检测SOP。"
+  },
+  {
+    "id": "reverse-b-consistency",
+    "prompt": "使用 lib-patent-reverse-layout。权利要求含V5厚度方向梯度和富集分布，但实施例1没有富集工艺，请做一致性自检并提出修订。",
+    "expected": "应识别权利要求、实施例1、方法权利要求和检测SOP未闭环，建议补强富集工艺/方法权/检测公式或将V5降级为从属权利要求。"
+  }
+]
